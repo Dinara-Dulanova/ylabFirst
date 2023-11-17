@@ -1,0 +1,12 @@
+@import url(./src/blocks/page/page.css);
+@import url(./src/blocks/authentication/authentication.css);
+@import url(./src/blocks/title/title.css);
+@import url(./src/blocks/auth/__form/auth__form.css);
+@import url(./src/blocks/auth/__input/auth__input.css);
+@import url(./src/blocks/error/error.css);
+@import url(./src/blocks/auth/__input/_type_error/auth__input_type_error.css);
+@import url(./src/blocks/auth/__button/auth__button.css);
+@import url(./src/blocks/auth/__button/_disabled/auth__button_disabled.css);
+@import url(./src/blocks/auth/__button-text/auth__button-text.css);
+@import url(./src/blocks/auth/__error/auth__error.css);
+@import url(./src/blocks/show/show.css);
