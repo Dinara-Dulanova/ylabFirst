@@ -1,8 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Y_LAB + 1ый урок
+ДЗ для первого урока на стажировку в Y_LAB_University
+Задание: 
+Попробуйте сделать удобную и красивую форму аутентификации через почту и пароль — но без готовых библиотек компонентов. Нужно продумать отправку почты/пароля на сервер, но сервер можно не делать, просто замокав fetch(). 

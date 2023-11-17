@@ -1,6 +1,7 @@
 import {FormValidator} from './src/components/FormValidator.js'
 import {Form} from './src/components/Form.js'
 import {Api} from './src/components/Api.js'
+import {configForm, authForm} from './utils/constants.js'
 
 function showAuthError() {
   const errorMessage = document.querySelector('.auth__error');
@@ -12,23 +13,15 @@ function hideAuthError() {
   errorMessage.classList.remove('show');
 }
 
-const configForm = {
-    inputSelector: '.auth__input',
-    submitButtonSelector: '.auth__button',
-    inactiveButtonClass: 'auth__button_disabled',
-    inputErrorClass: 'auth__input_type_error',
-  };
+const api = new Api(
+  'https://example.com', //сервер
+  {
+    authorization: 'bybjygvbjgj', //токен
+    'Content-Type': 'application/json'
+  }
+);
 
-  const api = new Api(
-    'https://example.com', //сервер
-    {
-      authorization: 'bybjygvbjgj', //токен
-      'Content-Type': 'application/json'
-    }
-  );
-
-const authForm = document.querySelector('.auth__form');
-//console.log(authForm);
+//включаем валидацию формы
 const formEditValidator = new FormValidator(configForm, authForm, ()=> {console.log('hi')});
 formEditValidator.enableValidation();
 
