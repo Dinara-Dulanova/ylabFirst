@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/YylabFirst/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <script type="module" crossorigin src="/YylabFirst/assets/index-dvk0Psde.js"></script>
+    <link rel="stylesheet" crossorigin href="/YylabFirst/assets/index-mFc1b3WH.css">
+  </head>
+  <body class="page">
+    <div class="content">
+      <div class="authentication">
+        <h3 class="title">Вход</h3>
+        <form name="form-auth" class="auth__form" novalidate>
+          <input name="email" type="email" id="auth__email" class="auth__input" value="" placeholder="Ваш email" minlength="2" maxlength="40" required>
+          <span id="email-error" class="error"></span>
+          <input name="password" type="password" id="auth__password" class="auth__input" value="" placeholder="Пароль" minlength="2" maxlength="200" required>
+          <span id="password-error" class="error"></span>
+          <div class="auth__error">
+            Неверный адрес почты или пароль
+          </div>
+          <button class="auth__button auth__button-text" type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
