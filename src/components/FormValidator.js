@@ -9,16 +9,6 @@ export class FormValidator {
     this._inputsList = this._form.querySelectorAll(this._inputSelector);
     this._submitButtonElement = this._form.querySelector(this._submitButtonSelector);
   }
-
-  _showError(inputElement, errorElement) {
-    inputElement.classList.add(this._inputErrorClass);
-    errorElement.textContent = inputElement.validationMessage;
-  }
-  
-  _hideError(inputElement, errorElement) {
-    inputElement.classList.remove(this._inputErrorClass);
-    errorElement.textContent = '';
-  }
   
   _checkInputValidity(inputElement) {
     const isInputValid = inputElement.validity.valid;

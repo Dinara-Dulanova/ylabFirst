@@ -3,6 +3,8 @@ import {Form} from './src/components/Form.js'
 import {Api} from './src/components/Api.js'
 import {configForm, authForm} from './utils/constants.js'
 
+import './index.css';
+
 function showAuthError() {
   const errorMessage = document.querySelector('.auth__error');
   errorMessage.classList.add('show');
