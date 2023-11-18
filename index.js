@@ -3,6 +3,7 @@ import {Form} from './src/components/Form.js'
 import {Api} from './src/components/Api.js'
 import {configForm, authForm} from './utils/constants.js'
 
+import './index.css';
 
 function showAuthError() {
   const errorMessage = document.querySelector('.auth__error');
@@ -23,7 +24,7 @@ const api = new Api(
 );
 
 //включаем валидацию формы
-const formEditValidator = new FormValidator(configForm, authForm, ()=> {console.log('hi')});
+const formEditValidator = new FormValidator(configForm, authForm);
 formEditValidator.enableValidation();
 
 const formData = new Form((data) => {
