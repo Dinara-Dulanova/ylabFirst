@@ -1,3 +1,38 @@
+.authentication {
+    width: 430px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px 0px #00000026;
+    background-color: #FFFFFF;
+  }
+    
+  @media screen and (max-width: 700px) {
+    .authentication {
+      max-width: 350px;
+    }
+  }
+    
+  @media screen and (max-width: 500px) {
+    .authentication {
+      max-width: 282px;
+    }
+  }
+
+  .auth__button {
+    width: 100%;
+    background-color: #000000;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 18px;
+  }
+      
+  .auth__button:hover {
+    opacity: 0.8;
+  }
+
 @import url(./src/blocks/page/page.css);
 @import url(./src/blocks/authentication/authentication.css);
 @import url(./src/blocks/title/title.css);
